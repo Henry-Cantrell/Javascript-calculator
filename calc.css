@@ -1,0 +1,79 @@
+#calcContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 450px;
+    height: 450px;
+    border: 5px black solid;
+    border-radius: 5px;
+    margin:10px;
+}
+.buttonCalc {
+    width: 1fr;
+    height: 1fr;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+#textBox {
+    display: block;
+    width: 490px;
+    height: 38px;
+    border-width: thin;
+    text-align: left;
+}
+#calcButton4:before{
+    content:"1";
+}
+#calcButton5:before{
+    content:"2";
+}
+#calcButton6:before{
+    content:"3";
+}
+
+#calcButton7:before {
+    content:"Backspace"
+}
+#calcButton8:before{
+    content:"4";
+}
+#calcButton9:before{
+    content:"5";
+}
+#calcButton10:before{
+    content:"6";
+}
+#calcButton12:before{
+    content:"7";
+}
+#calcButton13:before{
+    content:"8";
+}
+#calcButton14:before{
+    content:"9";
+}
+#calcButton16:before{
+    content:"0";
+}
+#calcButton17:before{
+    content:"Decimal";
+}
+#calcButton18:before{
+    content: "Clear";
+}
+#calcButton0:before{
+    content: "Add";
+}
+#calcButton1:before{
+    content: "Subtract";
+}
+#calcButton2:before{
+    content: "Multiply";
+}
+#calcButton3:before{
+    content: "Divide";
+}
+#calcButton19:before{
+    content: "Equal";
+}
