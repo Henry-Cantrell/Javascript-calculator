@@ -7,7 +7,8 @@ let calcMemory = [];
 let buttonThing = document.getElementById("returnThing");
 let accumulator = calcMemory[0];
 
-for (let i=0; i<20; i++) {
+for (let i=0; i<20; i++)
+{
     let madeSquare = document.createElement('div')
     madeSquare.setAttribute("id", "calcButton" + i);
     madeSquare.setAttribute("class", "buttonCalc")
@@ -159,12 +160,17 @@ let equalOperator = document.getElementById("calcButton19");
 equalOperator.addEventListener("click", function() {
     let joinNum = Number(displayValue.join(''));
     calcMemory.push(joinNum)
-    displayValue.length = 0;
 
     displayField.textContent = "";
 
     let doThing = calcMemory.join('');
-    let eqSolve = eval(doThing)
+    let eqSolve = eval(doThing).toFixed(9)
 
-    displayField.textContent = eqSolve.toFixed(4);
+    displayField.textContent = eqSolve;
+
+    displayValue[0] = eqSolve;
+    calcMemory = [];
+    
+    console.log(displayValue)
+    console.log(calcMemory)
 })
